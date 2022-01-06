@@ -19,6 +19,7 @@ function App() {
       <ChosenQuestions display_text="Question 3:"/>
 
       <h3>Specify what's needed in your password:</h3>
+      <Criteria description="Minimum length (e.g. 8, 12)" />
       <Criteria description="Include symbols (e.g. @$)" />
       <Criteria description="Include numbers (e.g. 123)" />
       <Criteria description="Include lowercase characters (e.g. abc)" />
