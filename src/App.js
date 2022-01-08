@@ -1,5 +1,5 @@
 import Header from './components/Header';
-// import Button from './components/Button';
+// // import Button from './components/Button';
 import Category from './components/Category';
 import Criteria from './components/Criteria';
 import ChosenQuestions from './components/ChosenQuestions';
