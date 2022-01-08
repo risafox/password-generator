@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Button from './components/Button';
-import Category from './components/Category';
 import Criteria from './components/Criteria';
 import ChosenQuestions from './components/ChosenQuestions';
 
@@ -8,12 +7,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <h2>Generate a new password by selecting 3 questions below.</h2>
-      <Category text="About Yourself" />
-      <Category text="About Your Family" />
-      <Category text="Others" />
-
-      <h3>Questions chosen:</h3>
+      <h3>Generate a new password by selecting 3 questions below:</h3>
       <ChosenQuestions display_text="Question 1:"/>
       <ChosenQuestions display_text="Question 2:"/>
       <ChosenQuestions display_text="Question 3:"/>
