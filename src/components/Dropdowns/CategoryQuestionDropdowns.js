@@ -7,34 +7,44 @@ const CategoryQuestionDropdowns = () => {
     const [categoryOption, setCategoryOption] = useState('default');
 
     return (
-        <div>
-            <div>
-                <label for="categories">Choose a category:  </label>
-                <select name="categories" id="categories" 
-                    value={categoryOption}
-                    onChange={(e) => setCategoryOption(e.target.value)}
-                >
-                    <option disabled selected value="default"> -- select an option -- </option>
-                    <option value="about-yourself">About Yourself</option>
-                    <option value="about-your-family">About Your Family</option>
-                    <option value="about-other">About Other People and Things</option>
-                    <option value="custom">Write Your Own Question</option>
-                </select>
-            </div>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col mb-2">
+                        <div class= "form-group">
+                            <label for="categories">Choose a category:  </label>
+                            <select class="form-control" name="categories" id="categories" 
+                                value={categoryOption}
+                                onChange={(e) => setCategoryOption(e.target.value)}
+                            >
+                                <option disabled selected value="default"> -- select an option -- </option>
+                                <option value="about-yourself">About Yourself</option>
+                                <option value="about-your-family">About Your Family</option>
+                                <option value="about-other">About Other People and Things</option>
+                                <option value="custom">Write Your Own Question</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-            <div>
-                <label for="questions">Choose a question:  </label>
-                {categoryOption == "default" && 
-                    <select name="questions" id="questions">
-                        <option disabled selected value> -- select a category above -- </option> 
-                    </select>}
-                {categoryOption == "about-yourself" && <Dropdown1 />}
-                {categoryOption == "about-your-family" && <Dropdown2 />}
-                {categoryOption == "about-other" && <Dropdown3 />}
-                {categoryOption == "custom" && 
-                    <input type="text" placeholder="Input custom question"></input>
-                }
-            </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <div class="form-group">
+                            <label for="questions">Choose a question:  </label>
+                            {categoryOption == "default" && 
+                                <select class="form-control" name="questions" id="questions">
+                                    <option disabled selected value> -- select a category above -- </option> 
+                                </select>}
+                            {categoryOption == "about-yourself" && <Dropdown1 />}
+                            {categoryOption == "about-your-family" && <Dropdown2 />}
+                            {categoryOption == "about-other" && <Dropdown3 />}
+                            {categoryOption == "custom" && 
+                                <input class="form-control" type="text" placeholder="Input custom question"></input>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     );
 }

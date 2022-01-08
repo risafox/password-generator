@@ -1,7 +1,7 @@
 const Dropdown2 = () => {
     return (
-        <div>
-            <select name="questions" id="questions">
+        <div class= "form-group">
+            <select class= "form-control" name="questions" id="questions">
                 <option disabled selected value> -- select an option -- </option>
                 <option value="mother-middle-name">What is your mother's middle name?</option>
                 <option value="sibling-birthdate">What is your oldest sibling's birthday month and year?</option>
