@@ -1,8 +1,8 @@
 
 const AnswerField = () => {
     return (
-        <div>
-            <input type="text" placeholder="Input answer"></input>
+        <div class="container form-group">
+            <input class="form-control" type="text" placeholder="Input answer"></input>
         </div>
     );
 }

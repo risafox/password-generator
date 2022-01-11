@@ -1,7 +1,7 @@
 const Dropdown1 = () => {
     return (
-        <div>
-            <select name="questions" id="questions">
+        <div class= "form-group">
+            <select class= "form-control" name="questions" id="questions">
                 <option disabled selected value> -- select an option -- </option>
                 <option value="fav-fruit">What is your favourite fruit?</option>
                 <option value="fav-author">Who is your favourite author?</option>
